@@ -41,6 +41,10 @@
     color: white;
 }
 
+.layout{
+    height: 100vh;
+}
+
 /*aside/side-bar*/
 .logo img{
     max-width: 120px;
@@ -49,7 +53,7 @@
 aside{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: calc(100vh - 60px);
     width: 150px;
 
 }
@@ -62,14 +66,16 @@ header{
     justify-content: end;
 }
 
-
-
+main{
+    height: calc( 100vh - 140px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
 
 section{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    overflow: hidden;
     padding-left: 30px;
 }
 
@@ -77,10 +83,15 @@ section{
     max-height: 200px;
 }
 
-
 .item{
     margin:0;
     flex-grow: ;
     padding-right: 25px;
     text-align: center;
+}
+
+
+footer{
+    display: flex;
+    height: 60px;
 }
