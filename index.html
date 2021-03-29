@@ -7,124 +7,252 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="css\all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="style.css">
+    
     
     <title>Spotify</title>
 </head>
 <body>
 
 <div class="layout">
-    <aside class="clearfix float-left bg-red">
+    <aside class=" float-left bg-black">
         <div class="logo">
             <img src="img\logo.svg" alt="">
          </div>
+
          <nav>
-             dfgd
+             <ul>
+                 <li id="small-logo"><img src="img\logo-small.svg" alt=""></li>
+                 <li><button><img src="img\home.svg" alt=""><span>Home</span></button></li>
+                 <li><button><img src="img\search.svg" alt=""><span>Cerca</span></button></li>
+                 <li><button><img src="img\libreria.svg" alt=""><span>La tua libreria</span></button></li>
+             </ul>
          </nav>
+
+         <nav class="nav-playlist">
+            <ul>
+                <li><button><i style="padding: 10px; background-color: grey; color: black;" class="fas fa-plus secondary-bg-color" aria-hidden="true"></i><span>Crea Playlist</span></button></li>
+                <li><button>Nome Playlist</button></li>
+                <li><button>Nome Playlist</button></li>
+                <li><button>Nome Playlist</button></li>
+                <li><button>Nome Playlist</button></li>
+                <li><button>Nome Playlist</button></li>
+                <li><button>Nome Playlist</button></li>
+                <li><button>Nome Playlist</button></li>
+            </ul>
+        </nav>
+
+        <nav class="nav-bottom">
+            <ul>
+                <li><a href="#"><img src="img\download.svg" alt=""></i><span style="color: grey;">Installa app</span></a></li>
+                <li><a href="#"><img style="background-color: grey;" class="img-circle" src="img\profile.svg" alt=""><span style="color:white;font-weight: bold;">John Doe</span></a></li>
+            </ul>
+        </nav>
     </aside>
-
-    <header>
-
-    </header>
-
+<!-- Main content -->
     <main class="bg-dark">
+        <div class="menu bg-lightblack">
+            <button class="btn-menu">EFFETTUA &nbsp; L'UPGRADE</button>
+        </div>
+
+        <div class="layout-main">
+
         <nav class="text-center">
             <span><a href="#">IN EVIDENZA</a></span>
-            <span><a href="#">IN EVIDENZA</a></span>
-            <span><a href="#">IN EVIDENZA</a></span>
-            <span><a href="#">IN EVIDENZA</a></span>
-            <span><a href="#">IN EVIDENZA</a></span>
-            <span><a href="#">IN EVIDENZA</a></span>
+            <span><a href="#">POODCAST</a></span>
+            <span><a href="#">CLASSIFICHE</a></span>
+            <span><a href="#">GENERI E MOOD</a></span>
+            <span><a href="#">NUOVE USCITE</a></span>
+            <span><a href="#">SCOPRI</a></span>
         </nav>
 
         <h3 class="white">Recently played</h3>
-
+<!-- Track, album and film -->
         <section>
             <div class="item">
-                <img src="img\metal_lifting.jpg" alt="">
+                <div class="album">
+                    <img src="img\metal_lifting.jpg" alt="">
+                    <a href="#"><i class="far fa-play-circle"></i></a>
+                </div>
+                <div class="title">
+                    <h4 class="white">Heavy Metal</h4>
+                    <p class="text-grey">Subtitle</p>
+                </div>
             </div>
 
             <div class="item">
-                <img src="img\stranger.jpeg" alt="">
+                <div class="album">
+                    <img src="img\stranger.jpeg" alt="">
+                    <a href="#"><i class="far fa-play-circle"></i></a>
+                </div>
+                <div class="title">
+                    <h4 class="white">Heavy Metal</h4>
+                    <p class="text-grey">Subtitle</p>
+                </div>
             </div>
 
             <div class="item">
-                <img src="img\aquietplace.jpeg" alt="">
+                <div class="album">
+                    <img src="img\aquietplace.jpeg" alt="">
+                    <a href="#"><i class="far fa-play-circle"></i></a>
+                </div>
+                <div class="title">
+                    <h4 class="white">A quet place</h4>
+                    <p class="text-grey">Subtitle</p>
+                </div>
             </div>
 
             <div class="item">
-                <img src="img\split.jpeg" alt="">
+                <div class="album">
+                    <img src="img\split.jpeg" alt="">
+                    <a href="#"><i class="far fa-play-circle"></i></a>
+                </div>
+                <div class="title">
+                    <h4 class="white">Split</h4>
+                    <p class="text-grey">Subtitle</p>
+                </div>
             </div>
 
             <div class="item">
-                <img src="img\metal_lifting.jpg" alt="">
+                <div class="album">
+                    <img src="img\cure.jpeg" alt="">
+                    <a href="#"><i class="far fa-play-circle"></i></a>
+                </div>
+                <div class="title">
+                    <h4 class="white">A cure for wellness</h4>
+                    <p class="text-grey">Subtitle</p>
+                </div>
             </div>
 
             <div class="item">
-                <img src="img\metal_lifting.jpg" alt="">
+                <div class="album">
+                    <img src="img\sinister.jpeg" alt="">
+                    <a href="#"><i class="far fa-play-circle"></i></a>
+                </div>
+                <div class="title">
+                    <h4 class="white">Sinister</h4>
+                    <p class="text-grey">Subtitle</p>
+                </div>
             </div>
         </section>
 
-        <section>
-            <div class="item">
-                <img src="img\metal_lifting.jpg" alt="">
-            </div>
-
-            <div class="item">
-                <img src="img\stranger.jpeg" alt="">
-            </div>
-
-            <div class="item">
-                <img src="img\aquietplace.jpeg" alt="">
-            </div>
-
-            <div class="item">
-                <img src="img\split.jpeg" alt="">
-            </div>
-
-            <div class="item">
-                <img src="img\metal_lifting.jpg" alt="">
-            </div>
-
-            <div class="item">
-                <img src="img\metal_lifting.jpg" alt="">
-            </div>
-        </section>
+        <h3 class="white">Creato per John Doe</h3>
+        <p class="text-grey">Piu' ascolti, piu' assicurati saranno i suggerimenti.</p>
 
         <section>
             <div class="item">
-                <img src="img\metal_lifting.jpg" alt="">
+                <div class="album">
+                    <img src="img\radar.jpeg" alt="">
+                    <a href="#"><i class="far fa-play-circle"></i></a>
+                </div>
+                <div class="title">
+                    <h4 class="white">Relese Radar</h4>
+                </div>
             </div>
 
             <div class="item">
-                <img src="img\stranger.jpeg" alt="">
-            </div>
-
-            <div class="item">
-                <img src="img\aquietplace.jpeg" alt="">
-            </div>
-
-            <div class="item">
-                <img src="img\split.jpeg" alt="">
-            </div>
-
-            <div class="item">
-                <img src="img\metal_lifting.jpg" alt="">
-            </div>
-
-            <div class="item">
-                <img src="img\metal_lifting.jpg" alt="">
+                <div class="album">
+                    <img src="img\mixdaily.jpeg" alt="">
+                    <a href="#"><i class="far fa-play-circle"></i></a>
+                </div>
+                <div class="title">
+                    <h4 class="white">Daily Mix 1</h4>
+                </div>
             </div>
         </section>
+
+        <h3 class="white">Artisti piu' popolari</h3>
+        <p class="text-grey">Piu' ascolti, piu' assicurati saranno i suggerimenti.</p>
+        
+        <section>
+            <div class="item">
+                <div class="album">
+                    <img src="img\youg.jpeg" alt="" class="img-circle">
+                    <a href="#"><i class="far fa-play-circle"></i></a>
+                </div>
+                <div class="title">
+                    <h4 class="white">Heavy Metal</h4>
+                    <p class="text-grey">Subtitle</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="album">
+                    <img src="img\einaudi.jpeg" alt="" class="img-circle">
+                    <a href="#"><i class="far fa-play-circle"></i></a>
+                    
+                </div>
+                <div class="title">
+                    <h4 class="white">Heavy Metal</h4>
+                    <p class="text-grey">Subtitle</p>
+                </div>
+            </div>
+        </section>
+      </div>
+
     </main>
-
-    <footer class="bg-red">
-        dfgdfgd
+<!-- Footer -->
+    <footer class="bg-player">
+<!-- Control-track -->
+        <div class="selected-track">
+            <div class="select-img">
+                <img src="img\sinister.jpeg" alt="">
+            </div>
+            <div class="title-track">
+                <p style="color: white;">Sinister</p>
+                <span style="color: grey; font-size: 10px;">Subtitle</span>
+            </div>
+            <div class="menu-track">
+                <span><button><i class="far fa-heart padding-X-10" aria-hidden="true"></i></button></span>
+                <span><button><i class="far fa-folder" aria-hidden="true"></i></button></span>
+            </div>
+        </div>
+<!-- Player -->
+        <div class="control-player text-center">
+            <div class="control-bar">
+                <button><i class="fas fa-random" aria-hidden="true"></i></button>
+                <button><i class="fas fa-step-backward" aria-hidden="true"></i></button>
+                <button><i style="padding:0 15px;" class="far fa-play-circle fa-2x" aria-hidden="true"></i></button>
+                <button><i class="fas fa-step-forward" aria-hidden="true"></i></button>
+                <button><i class="fas fa-undo" aria-hidden="true"></i></button>
+            </div>
+            <div class="player-bar">
+                <span>0:25</span>
+                <div class="bar">
+                    <div class="progression-bar">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                </div>
+                <span>4.35</span>
+            </div>
+        </div>
+<!-- audio-Player -->
+        <div class="control-audio">
+            <div class="button-audio">
+                <button><i class="fas fa-list" aria-hidden="true"></i></button>
+                <button><i class="fas fa-desktop" aria-hidden="true"></i></button>
+                <button><i class="fas fa-volume-up" aria-hidden="true"></i></button>
+            </div>
+            <div class="vol-bar">
+                <div class="progression-audio-bar">
+                    <i class="fas fa-circle"></i>
+                </div>
+            </div>
+        </div>
     </footer>
 </div>
 
- 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
 
